@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Pixelify Sans', cursive;
-;
     font-size: 32px ;
     font-weight: 800;
+    list-style: square;
 
 }
 
@@ -14,4 +14,27 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background: radial-gradient(rgb(10, 255, 0), yellow);
+}
+ul{
+    position: relative;
+    transform: skewY(-15deg);
+
+}
+ul li img{
+
+}
+ul li {
+    position: relative;
+    list-style:decimal;
+    background: #00f5ff;
+    z-index:var(--i);
+    transition: .5s;
+    padding: 15px;
+    box-shadow: 0 0 100px pink;
+}
+
+ul li:hover{
+        background: radial-gradient(rgb(10, 255, 0), yellow);
+    transform: translateX(-85px);
 }
